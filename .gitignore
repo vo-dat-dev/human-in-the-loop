@@ -34,6 +34,11 @@ yarn-error.log*
 .env
 .env*
 
+# .NET secrets - never commit these
+agent/appsettings.Development.json
+agent/appsettings.Production.json
+agent/appsettings.secrets.json
+
 # vercel
 .vercel
 
