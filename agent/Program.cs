@@ -66,7 +66,7 @@ public class ProverbsAgentFactory
             });
     }
 
-    public AIAgent CreateProverbsAgent()
+    public SharedStateAgent CreateProverbsAgent()
     {
         var chatClient = _openAiClient.GetChatClient("gpt-4o-mini").AsIChatClient();
 
