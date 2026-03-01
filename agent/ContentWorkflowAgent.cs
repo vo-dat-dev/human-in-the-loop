@@ -38,7 +38,8 @@ public static class ContentWorkflowAgentFactory
                 You are a research assistant. When given a topic, produce a concise research brief with:
                 - 3 key facts
                 - 2 current trends
-                - 1 surprising insight
+                - 1 surprising insight 
+                - Adds a [ResearchAgent ✓] tag at the top
                 Format your output as a clear research brief for a writer. Keep it under 300 words.
                 Always respond in the same language as the user's request.
                 """,
@@ -59,6 +60,7 @@ public static class ContentWorkflowAgentFactory
                 - An engaging introduction
                 - 2-3 body paragraphs
                 - A clear conclusion
+                - Adds a [WRITER AGENT ✓] tag at the top
                 Make it accessible to a general audience.
                 Always respond in the same language as the user's original request.
                 """,
