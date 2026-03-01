@@ -20,6 +20,11 @@ var jsonOptions = app.Services.GetRequiredService<IOptions<JsonOptions>>();
 var agentFactory = new ProverbsAgentFactory(builder.Configuration, loggerFactory, jsonOptions.Value.SerializerOptions);
 app.MapAGUI("/", agentFactory.CreateProverbsAgent());
 
+// Content Creation Workflow: ResearchAgent → WriterAgent → ReviewerAgent
+// Demonstrates the "Workflow as Agent" pattern from Microsoft Agent Framework
+// https://learn.microsoft.com/en-us/agent-framework/workflows/as-agents
+app.MapAGUI("/workflow", ContentWorkflowAgentFactory.Create(builder.Configuration));
+
 await app.RunAsync();
 
 // =================
