@@ -12,10 +12,14 @@ const serviceAdapter = new ExperimentalEmptyAdapter();
 
 // 2. Create the CopilotRuntime instance and utilize the Microsoft Agent Framework
 // AG-UI integration to setup the connection.
-const agentUrl = process.env.AGENT_URL ?? "http://localhost:8000/";
+const agentUrl = process.env.AGENT_URL ?? "http://localhost:8000";
 const runtime = new CopilotRuntime({
   agents: {
-    my_agent: new HttpAgent({ url: agentUrl }),
+    // Proverbs agent - human-in-the-loop demo
+    my_agent: new HttpAgent({ url: `${agentUrl}/` }),
+    // Content pipeline workflow: ResearchAgent → WriterAgent → ReviewerAgent
+    // Demonstrates the "Workflow as Agent" pattern
+    content_pipeline: new HttpAgent({ url: `${agentUrl}/workflow` }),
   },
 });
 

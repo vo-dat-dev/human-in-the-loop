@@ -1,8 +1,9 @@
 "use client";
 
+import { MoonCard } from "@/components/moon";
 import { ProverbsCard } from "@/components/proverbs";
 import { WeatherCard } from "@/components/weather";
-import { MoonCard } from "@/components/moon";
+import { AgentState } from "@/lib/types";
 import {
   useCoAgent,
   useFrontendTool,
@@ -10,8 +11,8 @@ import {
   useRenderToolCall,
 } from "@copilotkit/react-core";
 import { CopilotKitCSSProperties, CopilotSidebar } from "@copilotkit/react-ui";
+import Link from "next/link";
 import { useState } from "react";
-import { AgentState } from "@/lib/types";
 
 export default function CopilotKitPage() {
   const [themeColor, setThemeColor] = useState("#6366f1");
@@ -121,9 +122,15 @@ function YourMainContent({ themeColor }: { themeColor: string }) {
   return (
     <div
       style={{ backgroundColor: themeColor }}
-      className="h-screen flex justify-center items-center flex-col transition-colors duration-300"
+      className="h-screen flex justify-center items-center flex-col transition-colors duration-300 gap-4"
     >
       <ProverbsCard state={state} setState={setState} />
+      <Link
+        href="/workflow"
+        className="text-white/70 hover:text-white text-sm underline transition-colors"
+      >
+        Try the Content Pipeline (Workflow as Agent) →
+      </Link>
     </div>
   );
 }
