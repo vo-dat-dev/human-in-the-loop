@@ -1,9 +1,9 @@
+import { HttpAgent } from "@ag-ui/client";
 import {
   CopilotRuntime,
   ExperimentalEmptyAdapter,
   copilotRuntimeNextJSAppRouterEndpoint,
 } from "@copilotkit/runtime";
-import { HttpAgent } from "@ag-ui/client";
 import { NextRequest } from "next/server";
 
 // 1. You can use any service adapter here for multi-agent support. We use
@@ -12,10 +12,10 @@ const serviceAdapter = new ExperimentalEmptyAdapter();
 
 // 2. Create the CopilotRuntime instance and utilize the Microsoft Agent Framework
 // AG-UI integration to setup the connection.
+const agentUrl = process.env.AGENT_URL ?? "http://localhost:8000/";
 const runtime = new CopilotRuntime({
   agents: {
-    // Our FastAPI endpoint URL
-    my_agent: new HttpAgent({ url: "http://localhost:8000/" }),
+    my_agent: new HttpAgent({ url: agentUrl }),
   },
 });
 
