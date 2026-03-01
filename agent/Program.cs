@@ -23,7 +23,7 @@ app.MapAGUI("/", agentFactory.CreateProverbsAgent());
 // Content Creation Workflow: ResearchAgent → WriterAgent → ReviewerAgent
 // Demonstrates the "Workflow as Agent" pattern from Microsoft Agent Framework
 // https://learn.microsoft.com/en-us/agent-framework/workflows/as-agents
-app.MapAGUI("/workflow", ContentWorkflowAgentFactory.Create(builder.Configuration));
+app.MapAGUI("/workflow", ContentWorkflowAgentFactory.Create(builder.Configuration, loggerFactory));
 
 await app.RunAsync();
 
