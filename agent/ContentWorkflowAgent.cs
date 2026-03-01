@@ -113,7 +113,7 @@ public sealed class LoggingAgentWrapper(AIAgent innerAgent, ILogger logger) : De
 {
     private static readonly string[] AgentEmojis = ["🔍", "✍️", "✅"];
     private static int _agentCounter = 0;
-    private readonly string _emoji = AgentEmojis[Interlocked.Increment(ref _agentCounter) % AgentEmojis.Length - 1];
+    private readonly string _emoji = AgentEmojis[(Interlocked.Increment(ref _agentCounter) - 1) % AgentEmojis.Length];
 
     public override async IAsyncEnumerable<AgentRunResponseUpdate> RunStreamingAsync(
         IEnumerable<ChatMessage> messages,
