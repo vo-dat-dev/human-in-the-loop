@@ -19,7 +19,6 @@ const runtime = new CopilotRuntime({
   },
 });
 
-// 3. Build a Next.js API route that handles the CopilotKit runtime requests.
 export const POST = async (req: NextRequest) => {
   const { handleRequest } = copilotRuntimeNextJSAppRouterEndpoint({
     runtime,

@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
@@ -6,22 +7,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "agent", "agent", "{A0596E84
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProverbsAgent", "agent\ProverbsAgent.csproj", "{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "translation-workflow", "translation-workflow", "{440EECA4-E451-EED7-3434-5A575ACED60A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationWorkflow", "translation-workflow\TranslationWorkflow.csproj", "{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|x64.Build.0 = Debug|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Debug|x86.Build.0 = Debug|Any CPU
 		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|x64.ActiveCfg = Release|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|x64.Build.0 = Release|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979}.Release|x86.Build.0 = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|x64.Build.0 = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Debug|x86.Build.0 = Debug|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|x64.ActiveCfg = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|x64.Build.0 = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|x86.ActiveCfg = Release|Any CPU
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7CF3E2CC-06FB-18A1-2B4D-9D6920DD8979} = {A0596E84-2522-6F31-0F43-77167BFA80D0}
+		{24103FF1-3B5F-4E7E-B9DF-453F32AD7B9C} = {440EECA4-E451-EED7-3434-5A575ACED60A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7112F98-4CA0-4799-9ACD-092976F125EB}

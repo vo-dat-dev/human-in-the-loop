@@ -1,0 +1,5 @@
+E:\demo\human-in-the-loop\translation-workflow\obj\Debug\net9.0\TranslationWorkflow.csproj.AssemblyReference.cache
+E:\demo\human-in-the-loop\translation-workflow\obj\Debug\net9.0\TranslationWorkflow.GeneratedMSBuildEditorConfig.editorconfig
+E:\demo\human-in-the-loop\translation-workflow\obj\Debug\net9.0\TranslationWorkflow.AssemblyInfoInputs.cache
+E:\demo\human-in-the-loop\translation-workflow\obj\Debug\net9.0\TranslationWorkflow.AssemblyInfo.cs
+E:\demo\human-in-the-loop\translation-workflow\obj\Debug\net9.0\TranslationWorkflow.csproj.CoreCompileInputs.cache
